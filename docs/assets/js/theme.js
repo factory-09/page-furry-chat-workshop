@@ -7,9 +7,17 @@ function extJS_getArt() {
 		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=100',
 		method: 'GET',
 		dataType: 'json',
-		cache: false,
 		headers: {
 			'Authorization': 'Bot ' + atob('TlRNNE5qZzFPREF4TVRRME1qVTBORGMxLkR5NW9fQS5mbTlpdkxCYUt2aTlaZE5JRW9KUGtSQ0Q1V0k=')
+		},
+		beforeSend: function () {
+		},
+		success: function () {
+		},
+		error: function () {
+		},
+		complete: function () {
+			$('#page-wrapper').empty().append(out);
 		}
 	}).done(function (data) {
 		message = data;
@@ -35,8 +43,6 @@ function extJS_getArt() {
 				}
 			}
 		}
-
-		$('#page-wrapper').empty().append(out);
 	})
 }
 

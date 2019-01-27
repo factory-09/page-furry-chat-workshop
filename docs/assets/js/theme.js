@@ -1,7 +1,7 @@
 'use strict';
 
 function extJS_getWorkshop() {
-	let message, author, attach, attach_name, attach_url, timestamp, out;
+	let message, author, attach, attach_name, attach_url, timestamp, date, out;
 
 	$.ajax({
 		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=100',
@@ -29,7 +29,8 @@ function extJS_getWorkshop() {
 		for (; i < j; i++) {
 			author = message[i].author;
 			attach = message[i].attachments;
-			timestamp = new Date(message[i].timestamp).toISOString().split('T')[0];
+			timestamp = message[i].timestamp;
+			date = new Date(message[i].timestamp).toISOString().split('T')[0];
 
 			let k = 0;
 			const l = attach.length;
@@ -47,7 +48,7 @@ function extJS_getWorkshop() {
 					out += '<div class="card-content">';
 					out += '<div class="media">';
 					out += '<div class="media-left"><figure class="image is-64x64"><img src="https://cdn.discordapp.com/avatars/' + author.id + '/' + author.avatar + '.png" alt="" /></figure></div>';
-					out += '<div class="media-content"><h4 class="title is-4">' + author.username + '</h4><p class="subtitle is-6">' + timestamp + '</p></div>';
+					out += '<div class="media-content"><h4 class="title is-4">' + author.username + '</h4><p class="subtitle is-6"><time datetime="' + timestamp + '">' + date + '</time></p></div>';
 					out += '</div>';
 					out += '</div>';
 					out += '</div>';

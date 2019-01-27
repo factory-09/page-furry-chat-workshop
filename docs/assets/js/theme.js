@@ -17,7 +17,7 @@ function extJS_getArt() {
 		error: function () {
 		},
 		complete: function () {
-			$('#art').empty().append(out);
+			$('#data-art').empty().append(out);
 		}
 	}).done(function (data) {
 		message = data;
@@ -39,8 +39,10 @@ function extJS_getArt() {
 				if (attach[k].width === undefined) {
 					out += '';
 				} else {
+					out += '<div class="grid-cell">';
 					out += '<div class="card">';
 					out += '<div class="card-image"><figure class="image is-4by3"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
+					out += '</div>';
 					out += '</div>';
 				}
 			}

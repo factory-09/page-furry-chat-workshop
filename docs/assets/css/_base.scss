@@ -1,8 +1,5 @@
-.card {
-	.card-content {
-		.content {
-			height: 10rem;
-			overflow-y: auto;
-		}
-	}
+.grid {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }

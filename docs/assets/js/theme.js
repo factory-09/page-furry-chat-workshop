@@ -27,6 +27,7 @@ function extJS_getArt() {
 		const j = message.length;
 
 		for (; i < j; i++) {
+			author = message[i].author;
 			attach = message[i].attachments;
 
 			let k = 0;
@@ -45,7 +46,7 @@ function extJS_getArt() {
 					out += '<div class="card-content">';
 					out += '<div class="media">';
 					out += '<div class="media-left"><figure class="image is-48x48"><img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" /></figure></div>';
-					out += '<div class="media-content"><p class="title is-4">John Smith</p><p class="subtitle is-6">@johnsmith</p></div>';
+					out += '<div class="media-content"><p class="title is-4">' + author.username + '</p><p class="subtitle is-6">@johnsmith</p></div>';
 					out += '</div>';
 					out += '</div>';
 					out += '</div>';

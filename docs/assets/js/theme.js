@@ -23,7 +23,7 @@ function extJS_getArt() {
 		message = data;
 		out = '';
 
-		let i = 0, count = 0;
+		let i = 0;
 		const j = message.length;
 
 		for (; i < j; i++) {
@@ -39,16 +39,12 @@ function extJS_getArt() {
 				if (attach[k].width === undefined) {
 					out += '';
 				} else {
-					if (count % 4 === 0) out += '<div class="columns">';
-					out += '<div class="column"><figure class="image is-128x128"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
-					if (count % 4 !== 0) out += '</div>';
-
-					count++;
+					out += '<div class="card">';
+					out += '<div class="card-image"><figure class="image is-4by3"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
+					out += '</div>';
 				}
 			}
 		}
-
-		if (count % 4 !== 0) out += '</div>';
 	})
 }
 

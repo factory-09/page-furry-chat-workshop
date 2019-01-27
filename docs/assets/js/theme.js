@@ -4,7 +4,7 @@ function extJS_getWorkshop() {
 	let message, author, attach, attach_name, attach_url, timestamp, date, out;
 
 	$.ajax({
-		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=100',
+		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=200',
 		method: 'get',
 		dataType: 'json',
 		headers: {

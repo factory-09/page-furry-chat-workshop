@@ -23,13 +23,13 @@ function extJS_getArt() {
 		message = data;
 		out = '';
 
-		let i = 0;
+		let i = 0, count = 0;
 		const j = message.length;
 
 		for (; i < j; i++) {
 			attach = message[i].attachments;
 
-			let k = 0, count = 0;
+			let k = 0;
 			const l = attach.length;
 
 			for (; k < l; k++) {

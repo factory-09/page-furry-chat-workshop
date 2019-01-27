@@ -46,7 +46,7 @@ function extJS_getArt() {
 					out += '<div class="card-content">';
 					out += '<div class="media">';
 					out += '<div class="media-left"><figure class="image is-96x96"><img src="https://cdn.discordapp.com/avatars/' + author.id + '/' + author.avatar + '.png" alt="" /></figure></div>';
-					out += '<div class="media-content"><p class="title is-4">' + author.username + '</p><p class="subtitle is-6">@johnsmith</p></div>';
+					out += '<div class="media-content"><h4 class="title is-4">' + author.username + '</h4><p class="subtitle is-6">@johnsmith</p></div>';
 					out += '</div>';
 					out += '</div>';
 					out += '</div>';

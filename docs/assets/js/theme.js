@@ -39,3 +39,5 @@ function extJS_getArt() {
 		$('#page-wrapper').empty().append(out);
 	})
 }
+
+extJS_getArt();

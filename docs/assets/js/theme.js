@@ -4,7 +4,7 @@ function extJS_getArt() {
 	let attachment, message, out, name, url;
 
 	$.ajax({
-		url: 'https://discordapp.com/api/channels/475258834500321280/messages',
+		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=100',
 		method: 'GET',
 		dataType: 'json',
 		cache: false,

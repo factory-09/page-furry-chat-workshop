@@ -1,18 +1,20 @@
 fonts:
-- https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&amp;subset=cyrillic
-- https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic
-- https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;subset=cyrillic
-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  - https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&amp;subset=cyrillic
+  - https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic
+  - https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;subset=cyrillic
+  - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
 styles:
-- https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css
-- https://cdn-storage.github.io/styles/theme/theme.css
+  - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
+  - https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css
+  - https://cdn-storage.github.io/styles/theme/theme.css
 
 scripts:
-- https://cdn.jsdelivr.net/npm/jquery
-- https://cdn.jsdelivr.net/npm/clipboard
-- https://cdn-storage.github.io/scripts/bulma/bulma.min.js
-- https://cdn-storage.github.io/scripts/theme/theme.min.js
+  - https://cdn.jsdelivr.net/npm/jquery
+  - https://cdn.jsdelivr.net/npm/clipboard
+  - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+  - https://cdn-storage.github.io/scripts/bulma/bulma.min.js
+  - https://cdn-storage.github.io/scripts/theme/theme.min.js
 
 meta:
   keywords: "furry, chat, фурри, чат, фурри чат"

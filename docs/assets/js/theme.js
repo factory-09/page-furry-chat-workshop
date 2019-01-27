@@ -40,7 +40,7 @@ function extJS_getArt() {
 				attach_url = attach[k].url;
 
 				if (attach[k].width === undefined) {
-					return;
+					return false;
 				}
 
 				out += '<div class="column"><figure class="image is-128x128"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';

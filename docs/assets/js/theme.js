@@ -42,7 +42,7 @@ function extJS_getArt() {
 				} else {
 					out += '<div class="grid-cell">';
 					out += '<div class="card">';
-					out += '<div class="card-image"><figure class="image is-4by3"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
+					out += '<div class="card-image"><figure class="image is-4by3"><a class="ext-lightbox" href="' + attach_url + '" rel="group-lightbox"><img src="' + attach_url + '" alt="' + attach_name + '" /></a></figure></div>';
 					out += '<div class="card-content">';
 					out += '<div class="media">';
 					out += '<div class="media-left"><figure class="image is-64x64"><img src="https://cdn.discordapp.com/avatars/' + author.id + '/' + author.avatar + '.png" alt="" /></figure></div>';
@@ -57,4 +57,15 @@ function extJS_getArt() {
 	})
 }
 
+/**
+ * FancyBox. Loading.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+function extJS_fancybox() {
+	let elItems = $('#data-art').find('a.ext-lightbox');
+
+	elItems.fancybox();
+}
+
 extJS_getArt();
+extJS_fancybox();

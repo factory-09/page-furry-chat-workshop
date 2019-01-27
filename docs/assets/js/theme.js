@@ -52,8 +52,8 @@ function extJS_getArt() {
 				console.log(count);
 			}
 
-			if (count % 2 !== 0) out += '</div>';
 		}
+		if (count % 2 !== 0) out += '</div>';
 	})
 }
 

@@ -30,7 +30,7 @@ function extJS_getArt() {
 			attach = message[i].attachments;
 
 			let k = 0;
-			const l = attachment.length;
+			const l = attach.length;
 
 			for (; k < l; k++) {
 				attach_name = attach[k].filename;

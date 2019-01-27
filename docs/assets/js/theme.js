@@ -29,9 +29,9 @@ function extJS_getArt() {
 				name = attachment[k].filename;
 
 				if (attachment[k].width === undefined) {
-					out += url + name;
+					out += '';
 				} else {
-					out += url + name;
+					out += '<img src="' + url + '" alt="' + name + '" />';
 				}
 			}
 		}

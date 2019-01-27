@@ -45,7 +45,7 @@ function extJS_getArt() {
 					out += '<div class="card-image"><figure class="image is-4by3"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
 					out += '<div class="card-content">';
 					out += '<div class="media">';
-					out += '<div class="media-left"><figure class="image is-48x48"><img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" /></figure></div>';
+					out += '<div class="media-left"><figure class="image is-96x96"><img src="https://cdn.discordapp.com/avatars/' + author.id + '/' + author.avatar + '.png" alt="" /></figure></div>';
 					out += '<div class="media-content"><p class="title is-4">' + author.username + '</p><p class="subtitle is-6">@johnsmith</p></div>';
 					out += '</div>';
 					out += '</div>';

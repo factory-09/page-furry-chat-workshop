@@ -39,7 +39,7 @@ function extJS_getArt() {
 				if (attachment[k].width === undefined) {
 					out += '';
 				} else {
-					out += '<img src="' + url + '" alt="' + name + '" />';
+					out += '<figure class="image"><img src="' + url + '" alt="' + name + '" /></figure>';
 				}
 			}
 		}

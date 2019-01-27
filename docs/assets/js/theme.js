@@ -48,6 +48,8 @@ function extJS_getArt() {
 				if (count % 2 !== 0) out += '</div>';
 
 				count++;
+
+				console.log(count);
 			}
 
 			if (count % 2 !== 0) out += '</div>';

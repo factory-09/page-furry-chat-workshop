@@ -17,7 +17,7 @@ function extJS_getArt() {
 		error: function () {
 		},
 		complete: function () {
-			$('#page-wrapper').empty().append(out);
+			$('.container').empty().append(out);
 		}
 	}).done(function (data) {
 		message = data;

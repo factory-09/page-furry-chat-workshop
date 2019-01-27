@@ -13,11 +13,12 @@ function extJS_getArt() {
 		beforeSend: function () {
 		},
 		success: function () {
+			$('.container').empty().append(out);
 		},
 		error: function () {
 		},
 		complete: function () {
-			$('.container').empty().append(out);
+			//$('.container').empty().append(out);
 		}
 	}).done(function (data) {
 		message = data;

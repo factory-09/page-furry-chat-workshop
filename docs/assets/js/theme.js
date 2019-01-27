@@ -33,19 +33,16 @@ function extJS_getArt() {
 			const l = attach.length;
 
 			for (; k < l; k++) {
-
-				if (count % 2 === 0) out += '<div class="columns">';
-
 				attach_name = attach[k].filename;
 				attach_url = attach[k].url;
 
 				if (attach[k].width === undefined) {
-					return false;
+					out += '';
+				} else {
+					if (count % 2 === 0) out += '<div class="columns">';
+					out += '<div class="column"><figure class="image is-128x128"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
+					if (count % 2 !== 0) out += '</div>';
 				}
-
-				out += '<div class="column"><figure class="image is-128x128"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
-
-				if (count % 2 !== 0) out += '</div>';
 
 				count++;
 

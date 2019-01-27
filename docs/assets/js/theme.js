@@ -29,19 +29,28 @@ function extJS_getArt() {
 		for (; i < j; i++) {
 			attach = message[i].attachments;
 
-			let k = 0;
+			let k = 0, count = 0;
 			const l = attach.length;
 
 			for (; k < l; k++) {
+
+				if (count % 2 === 0) out += '<div class="columns">';
+
 				attach_name = attach[k].filename;
 				attach_url = attach[k].url;
 
 				if (attach[k].width === undefined) {
 					out += '';
 				} else {
-					out += '<figure class="image"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure>';
+					out += '<div class="column"><figure class="image is-128x128"><img src="' + attach_url + '" alt="' + attach_name + '" /></figure></div>';
 				}
+
+				if (count % 2 !== 0) out += '</div>';
+
+				count++;
 			}
+
+			if (count % 2 !== 0) out += '</div>';
 		}
 	})
 }

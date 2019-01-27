@@ -1,7 +1,7 @@
 'use strict';
 
 function extJS_getArt() {
-	let attachment, message, out, name, url;
+	let message, attach, attach_name, attach_url, out;
 
 	$.ajax({
 		url: 'https://discordapp.com/api/channels/475258834500321280/messages?limit=100',
@@ -28,16 +28,16 @@ function extJS_getArt() {
 		const j = message.length;
 
 		for (; i < j; i++) {
-			attachment = message[i].attachments;
+			attach = message[i].attachments;
 
 			let k = 0;
 			const l = attachment.length;
 
 			for (; k < l; k++) {
-				url = attachment[k].url;
-				name = attachment[k].filename;
+				attach_name = attach[k].filename;
+				attach_url = attach[k].url;
 
-				if (attachment[k].width === undefined) {
+				if (attach[k].width === undefined) {
 					out += '';
 				} else {
 					out += '<figure class="image"><img src="' + url + '" alt="' + name + '" /></figure>';

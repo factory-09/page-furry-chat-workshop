@@ -48,7 +48,7 @@ function extJS_getWorkshop() {
 					out += '<div class="card-content">';
 					out += '<div class="media">';
 					out += '<div class="media-left"><figure class="image is-64x64"><img src="https://cdn.discordapp.com/avatars/' + author.id + '/' + author.avatar + '.png" alt="" /></figure></div>';
-					out += '<div class="media-content"><h4 class="title is-4">' + author.username + '</h4><p class="subtitle is-6"><time datetime="' + timestamp + '">' + date + '</time></p></div>';
+					out += '<div class="media-content"><h4 class="title is-4">' + author.username + '</h4><p class="subtitle is-6 has-text-grey-light"><time datetime="' + timestamp + '">' + date + '</time></p></div>';
 					out += '</div>';
 					out += '</div>';
 					out += '</div>';

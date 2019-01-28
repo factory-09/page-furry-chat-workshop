@@ -19,6 +19,7 @@ scripts:
   - https://cdn-storage.github.io/scripts/theme/theme.min.js
 
 meta:
+  title: "Мастерская"
   keywords: "furry, chat, фурри, чат, фурри чат"
   copyright: "METADATA Foundation"
   theme-color: "#f3f6f9"

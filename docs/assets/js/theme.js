@@ -1,6 +1,6 @@
 'use strict';
 
-extJS_discordGetImages(
+discord_getImages(
 	'#data-art',
 	'303327594793795588',
 	'475258834500321280',

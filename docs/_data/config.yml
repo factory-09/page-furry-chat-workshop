@@ -12,6 +12,7 @@ styles:
 scripts:
   - https://cdn.jsdelivr.net/npm/jquery
   - https://cdn.jsdelivr.net/npm/clipboard
+  - https://cdn.jsdelivr.net/npm/he
   - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
   - https://cdn-storage.github.io/scripts/discord/discord.api.min.js
   - https://cdn-storage.github.io/scripts/discord/discord.get.images.min.js

@@ -14,7 +14,7 @@ scripts:
   - https://cdn.jsdelivr.net/npm/clipboard
   - https://cdn.jsdelivr.net/npm/he
   - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
-  - https://cdn-storage.github.io/scripts/jquery/jquery.ajax-local-storage.min.js
+  - https://cdn-storage.github.io/scripts/api/fetch.cache.min.js
   - https://cdn-storage.github.io/scripts/discord/discord.api.min.js
   - https://cdn-storage.github.io/scripts/discord/discord.get.images.min.js
   - https://cdn-storage.github.io/scripts/bulma/bulma.min.js

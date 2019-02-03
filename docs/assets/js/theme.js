@@ -1,6 +1,6 @@
 'use strict';
 
-discord_getImages(
+runDiscord.images.run(
 	'#data-art',
 	'303327594793795588',
 	'475258834500321280',
